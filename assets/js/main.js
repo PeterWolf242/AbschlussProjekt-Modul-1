@@ -146,15 +146,8 @@ function showMenu () {
     menu.classList.toggle("show_mobile_menu");
 }
 
-// Wert für Monatsbeträge festlegen
-const priceArrayMonth = 
-["$49/<span>month</span>", "$79/<span>month</span>", "$99/<span>month</span>"];
-let price = document.querySelectorAll(".price");
-
-// Erste Ausgabe in HTML der Monatsbeiträge
-price[0].innerHTML = `<h3>${priceArrayMonth[0]}</h3>`;
-price[1].innerHTML = `<h3>${priceArrayMonth[1]}</h3>`;
-price[2].innerHTML = `<h3>${priceArrayMonth[2]}</h3>`;
+// Erste Ausgabe der monatlichen Kosten
+showPriceMonth();
 
 // Berechnung der monatlichen Preise
 function costTimeMonth(event) {
@@ -162,21 +155,12 @@ function costTimeMonth(event) {
     let btnMonth = document.querySelector("#btn_month");
     let btnYear = document.querySelector("#btn_year");
 
-    let price = document.querySelectorAll(".price");
-
-    // Wert für Monatsbeträge festlegen
-    const priceArrayMonth = 
-    ["$49/<span>month</span>", "$79/<span>month</span>", "$99/<span>month</span>"];
-    console.log({priceArrayMonth});
-
     // Hinzufügen bzw. Entfernen der Klasse "btn_aktiv" für die Buttons bei der Plan-Auswahl
     btnMonth.classList.add("btn_aktiv");
     btnYear.classList.remove("btn_aktiv");
-
-    // Ausgabe in HTML der Monatsbeiträge nach monatlichen Auswahl
-    price[0].innerHTML = `<h3>${priceArrayMonth[0]}</h3>`;
-    price[1].innerHTML = `<h3>${priceArrayMonth[1]}</h3>`;
-    price[2].innerHTML = `<h3>${priceArrayMonth[2]}</h3>`;
+    
+    // Ausgabe der monatlichen Kosten nach Auswahl "Monthly"
+    showPriceMonth();
 }
 
 // Berechnung der jährlichen Preise
@@ -186,16 +170,31 @@ function costTimeYear(event) {
     let btnYear = document.querySelector("#btn_year");
     let price = document.querySelectorAll(".price");
 
-    // Wert für Monatsbeträge festlegen
-    const priceArrayYear = 
-    ["$294/<span>year</span>", "$474/<span>year</span>", "$594/<span>year</span>"];
-    
     // Hinzufügen bzw. Entfernen der Klasse "btn_aktiv" für die Buttons bei der Plan-Auswahl
     btnMonth.classList.remove("btn_aktiv");
     btnYear.classList.add("btn_aktiv");
 
-    // Ausgabe in HTML der Monatsbeiträge nach jährlichen Auswahl
+    // Wert für Monatsbeträge festlegen
+    const priceArrayYear = 
+    ["$294/<span>year</span>", "$474/<span>year</span>", "$594/<span>year</span>"];
+    
+
+    // Ausgabe in HTML der Beiträge nach jährlichen Auswahl
     price[0].innerHTML = `<h3>${priceArrayYear[0]}</h3>`;
     price[1].innerHTML = `<h3>${priceArrayYear[1]}</h3>`;
     price[2].innerHTML = `<h3>${priceArrayYear[2]}</h3>`;
+}
+
+
+function showPriceMonth() {
+        // Wert für Monatsbeträge festlegen
+        const priceArrayMonth = 
+        ["$49/<span>month</span>", "$79/<span>month</span>", "$99/<span>month</span>"];
+        
+        let price = document.querySelectorAll(".price");
+    
+        // Ausgabe in HTML der Monatsbeiträge nach monatlichen Auswahl
+        price[0].innerHTML = `<h3>${priceArrayMonth[0]}</h3>`;
+        price[1].innerHTML = `<h3>${priceArrayMonth[1]}</h3>`;
+        price[2].innerHTML = `<h3>${priceArrayMonth[2]}</h3>`;
 }
