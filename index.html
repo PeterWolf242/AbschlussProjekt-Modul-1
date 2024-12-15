@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/global_min.css" />
+    <link rel="stylesheet" href="./assets/css/mediaqueries.css" />
+    <link
+      rel="icon"
+      href="./assets/img/logo-for-free.png"
+      type="image/x-icon"
+    />
+    <script src="./assets/js/main.js" defer></script>
+    <title>Abschluss-Projekt Modul-1</title>
+  </head>
+  <body id="top">
+    <header class="d-flex flex-column">
+      <!-- Oberster Bereich im Header Desktop-Ansicht -->
+      <section
+        class="top_headline fit_box d-flex between align-center m-l-r-auto"
+      >
+        <img
+          class="abstract"
+          src="./assets/img/abstract-design.png"
+          alt="Abstract-Design"
+          title="Abstract-Design"
+          aria-label="Abstract-Design"
+        />
+        <div class="top_headline_content d-flex align-center">
+          <img
+            src="./assets/img/logo-for-free.png"
+            alt="Logo for Free"
+            title="Logo for Free"
+            aria-label="Logo for Free"
+          />
+          <h2>Join Our Personalized Nutrition Demo For Free</h2>
+          <a href="">
+            <img
+              src="./assets/img/arrow-to-right.png"
+              alt="Arrow-to-Right"
+              title="Arrow-to-Right"
+              aria-label="Arrow-to-Right"
+            />
+          </a>
+        </div>
+        <img
+          class="abstract"
+          src="./assets/img/abstract-design.png"
+          alt="Abstract-Design"
+          title="Abstract-Design"
+          aria-label="Abstract-Design"
+        />
+      </section>
+      <section class="nav_section fit_box d-flex between align-center m0-auto">
+        <a href="/index.html" aria-label="Startseite Nitritionist">
+          <img
+            class="logo"
+            src="./assets/img/logo-nutritionist.png"
+            alt="Logo Nutritionist"
+            title="Logo Nutritionist"
+            aria-label="Logo Nutritionist"
+          />
+        </a>
+        <nav class="mobile_menu d-flex align-center between">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Team</a>
+          <a href="#">Process</a>
+          <a href="#">Pricing</a>
+          <a href="#">Blog</a>
+          <a href="#" id="btn_contact" class="btn btn_contact">Contact Us</a>
+        </nav>
+        <div class="mobile_menu">
+          <label for="mobile">
+            <input
+              type="checkbox"
+              name="mobile"
+              id="mobile"
+              onclick="showMenu()"
+              hidden
+            />
+            <img src="./assets/img/logo-mobile-menu.png" alt="" />
+          </label>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="coaching mobile_full">
+        <article
+          class="top_nutrition d-flex justify-center align-start between"
+        >
+          <div class="top_main_content">
+            <img
+              class="top_img mobile_full"
+              src="./assets/img/fittness-woman.webp"
+              alt="Fitness-Woman"
+              title="Fitness-Woman"
+              aria-label="Fitness-Woman"
+            />
+            <div
+              class="customer_box customer_box_mobile d-flex justify-start align-center"
+            >
+              <img
+                class="customer_icons"
+                src="./assets/img/customer-miniatur-view.png"
+                alt="Customer-Icon-Box"
+                title="Customer-Icon-Box"
+                aria-label="Customer-Icon-Box"
+              />
+              <p>430+ Happy Customers</p>
+            </div>
+          </div>
+          <div class="col mobile_full">
+            <h3>Transform Your ❤️ Health width</h3>
+            <h1>Personalized Nutrition Coaching</h1>
+            <p>
+              Welcome to Nutritionist, your partner in achieving optimal health
+              through personalized nutrition coaching. Our certified
+              nutritionists are here to guide you on your weight loss journey,
+              providing customized plans and ongoing support. Start your
+              transformation today and experience the power of personalized
+              nutrition coaching.
+            </p>
+            <div class="btn_box d-flex justify-start align-center">
+              <a href="#" class="btn btn_contact">Get Starter Today</a>
+              <a href="#" class="btn btn_book" id="btn_book">Book a Demo</a>
+            </div>
+            <div
+              class="customer_box costumer_box_desktop d-flex justify-start align-center"
+            >
+              <img
+                class="customer_icons"
+                src="./assets/img/customer-miniatur-view.png"
+                alt="Customer-Icon-Box"
+                title="Customer-Icon-Box"
+                aria-label="Customer-Icon-Box"
+              />
+              <p>430+ Happy Customers</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="features mobile_full text-center">
+          <h4>Features</h4>
+          <p>
+            Welcome to the Feature Section of Nutritionist, your ultimate
+            destination for all things nutrition and wellness.
+          </p>
+        </article>
+
+        <!-- Grid-Box Features-->
+        <section class="grid_box d-grid m0-auto mobile_full">
+          <div class="grid_item highlight_box">
+            <article>
+              <div class="grid_headline d-flex justify-start align-center">
+                <img
+                  class="img_54"
+                  src="./assets/img/logo-personalized-nutrition-plans.png"
+                  alt="Logo Personalized Nutritiion Plans"
+                  title="Logo Personalized Nutritiion Plans"
+                  aria-label="Logo Personalized Nutritiion Plans"
+                />
+                <h3>Personalized Nutrition Plans</h3>
+              </div>
+              <p>
+                Receive a tailored nutrition plan designed specifically for your
+                body and goals. Our certified nutritionists will consider your
+                unique needs, dietary preferences, and health conditions to
+                create a plan that suits you best.
+              </p>
+            </article>
+          </div>
+          <div class="grid_item highlight_box">
+            <article>
+              <div class="grid_headline d-flex justify-start align-center">
+                <img
+                  class="img_54"
+                  src="./assets/img/logo-guidance-from-certified-nutritionists.png"
+                  alt="Logo Guidance From Certified Nutrition"
+                  title="Logo Guidance From Certified Nutrition"
+                  aria-label="Logo Guidance From Certified Nutrition"
+                />
+                <h3>Guidance from Certified Nutritionists</h3>
+              </div>
+              <p>
+                Our team of experienced and certified nutritionists will provide
+                professional guidance and support throughout your journey. They
+                will answer your questions, address your concerns, and keep you
+                motivated as you work towards your goals.
+              </p>
+            </article>
+          </div>
+          <div class="grid_item highlight_box">
+            <article>
+              <div class="grid_headline d-flex justify-start align-center">
+                <img
+                  class="img_54"
+                  src="./assets/img/logo-food-tracking-and-analysis.png"
+                  alt="Logo Food Tracking and Analysis"
+                  title="Logo Food Tracking and Analysis"
+                  aria-label="Logo Food Tracking and Analysis"
+                />
+                <h3>Food Tracking and Analysis</h3>
+              </div>
+              <p>
+                Effortlessly track your food intake using our user-friendly app.
+                Our nutritionists will analyze your data to provide insights
+                into your eating habits, help you identify areas for
+                improvement, and make personalized recommendations.
+              </p>
+            </article>
+          </div>
+          <div class="grid_item highlight_box">
+            <article>
+              <div class="grid_headline d-flex justify-start align-center">
+                <img
+                  class="img_54"
+                  src="./assets/img/logo-meal-planning-and-recipes.png"
+                  alt="Logo Meal Planning and Recipes"
+                  title="Logo Meal Planning and Recipes"
+                  aria-label="Logo Meal Planning and Recipes"
+                />
+                <h3>Meal Planning and Recipes</h3>
+              </div>
+              <p>
+                Access a vast collection of delicious and healthy recipes
+                tailored to your dietary needs. Our nutritionists will also
+                create personalized meal plans, making it easier for you to stay
+                on track and enjoy nutritious meals.
+              </p>
+            </article>
+          </div>
+          <div class="grid_item highlight_box">
+            <article>
+              <div class="grid_headline d-flex justify-start align-center">
+                <img
+                  class="img_54"
+                  src="./assets/img/logo-lifestyle-and-behavior-coaching.png"
+                  alt="Logo Livestyle and Behavior Coaching"
+                  title="Logo Livestyle and Behavior Coaching"
+                  aria-label="Logo Livestyle and Behavior Coaching"
+                />
+                <h3>Lifestyle and Behavior Coaching</h3>
+              </div>
+              <p>
+                Achieving sustainable results requires more than just a diet
+                plan. Our nutritionists will work with you to develop healthy
+                habits, address emotional eating, and provide strategies to
+                overcome obstacles along the way.
+              </p>
+            </article>
+          </div>
+          <div class="grid_item highlight_box">
+            <article>
+              <div class="grid_headline d-flex justify-start align-center">
+                <img
+                  class="img_54"
+                  src="./assets/img/logo-lifestyle-and-behavior-coaching.png"
+                  alt="Logo Nutritiion Education and Workshops"
+                  title="Logo Nutritiion Education and Workshops"
+                  aria-label="Logo Nutritiion Education and Workshops"
+                />
+                <h3>Nutritional Education and Workshops</h3>
+              </div>
+              <p>
+                Expand your knowledge of nutrition through informative articles
+                and educational workshops. Our nutritionists will equip you with
+                the knowledge and tools to make informed choices for long-term
+                success.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <article class="features text-center">
+          <h4>Our Blogs</h4>
+          <p class="mobile_full">
+            Our blog is a treasure trove of informative and engaging articles
+            written by our team of nutritionists, dietitians, and wellness
+            experts. Here's what you can expect from our blog.
+          </p>
+        </article>
+
+        <!-- Grid-Box Our Blogs-->
+        <section class="grid_box d-grid m0-auto mobile_full">
+          <div class="grid_item blog_grid highlight_box">
+            <article>
+              <img
+                class="img_blog"
+                src="./assets/img/weight-loss.jpg"
+                alt="Weight Loss"
+                title="Weight Loss"
+                aria-label="Weight Loss"
+              />
+              <p><strong>Weight Loss</strong></p>
+              <h3>The Benefits of Hydration for Weight Loss</h3>
+              <p>
+                Discover how staying hydrated can support your weight loss goals
+                and improve overall health.
+              </p>
+              <div class="blog_person d-flex justify-end align-center">
+                <img
+                  class="person_icon"
+                  src="./assets/img/emily-johnson.png"
+                  alt="Emily Johnson"
+                  title="Emily Johnson"
+                  aria-label="Emily Johnson"
+                />
+                <article
+                  class="person_content d-flex flex-column justify-start"
+                >
+                  <p><strong>Emily Johnson</strong></p>
+                  <p>23 May 2023 - 5 min read</p>
+                </article>
+                <div class="fav_box">
+                  <img
+                    src="./assets/img/heart-logo.png"
+                    alt="Logo Heart"
+                    title="Logo Heart"
+                    aria-label="Logo Heart"
+                  />
+                  <img
+                    src="./assets/img/bookmark-logo.png"
+                    alt="Logo Bookmark"
+                    title="Logo Bookmark"
+                    aria-label="Logo Bookmark"
+                  />
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="grid_item blog_grid highlight_box">
+            <article>
+              <img
+                class="img_blog"
+                src="./assets/img/mindful-eating.jpg"
+                alt="Mindful Eating"
+                title="Mindful Eating"
+                aria-label="Mindful Eating"
+              />
+              <p><strong>Mindful Eating</strong></p>
+              <h3>Cultivating a Healthy Relationship with Food</h3>
+              <p>
+                Learn how practicing mindful eating can help you develop a
+                healthier relationship with food and improve your overall
+                well-being.
+              </p>
+              <div class="blog_person d-flex between align-center">
+                <img
+                  class="person_icon"
+                  src="./assets/img/sarah-thompson.png"
+                  alt="Sarah Thompson"
+                  title="Sarah Thompson"
+                  aria-label="Sarah Thompson"
+                />
+                <article
+                  class="person_content d-flex flex-column justify-start"
+                >
+                  <p><strong>Sarah Thompson</strong></p>
+                  <p>23 May 2023 - 5 min read</p>
+                </article>
+                <div class="fav_box">
+                  <img
+                    src="./assets/img/heart-logo.png"
+                    alt="Logo Heart"
+                    title="Logo Heart"
+                    aria-label="Logo Heart"
+                  />
+                  <img
+                    src="./assets/img/bookmark-logo.png"
+                    alt="Logo Bookmark"
+                    title="Logo Bookmark"
+                    aria-label="Logo Bookmark"
+                  />
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="grid_item blog_grid highlight_box">
+            <article>
+              <img
+                class="img_blog"
+                src="./assets/img/understanding-macronutrients.jpg"
+                alt="Understanding Macronutrients"
+                title="Understanding Macronutrients"
+                aria-label="Understanding Macronutrients"
+              />
+              <p><strong>Understanding Macronutrients</strong></p>
+              <h3>Carbohydrates, Proteins, and Fats</h3>
+              <p>
+                Get a comprehensive understanding of macronutrients and their
+                role in your diet for optimal health and weight management.
+              </p>
+              <div class="blog_person d-flex between align-center">
+                <img
+                  class="person_icon"
+                  src="./assets/img/mark-wilson.png"
+                  alt="Mark Wilson"
+                  title="Mark Wilson"
+                  aria-label="Mark Wilson"
+                />
+                <article
+                  class="person_content d-flex flex-column justify-start"
+                >
+                  <p><strong>Mark Wilson</strong></p>
+                  <p>23 May 2023 - 5 min read</p>
+                </article>
+                <div class="fav_box">
+                  <img
+                    src="./assets/img/heart-logo.png"
+                    alt="Logo Heart"
+                    title="Logo Heart"
+                    aria-label="Logo Heart"
+                  />
+                  <img
+                    src="./assets/img/bookmark-logo.png"
+                    alt="Logo Bookmark"
+                    title="Logo Bookmark"
+                    aria-label="Logo Bookmark"
+                  />
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="grid_item blog_grid highlight_box">
+            <article>
+              <img
+                class="img_blog"
+                src="./assets/img/healthy-snacks-on-the-go.webp"
+                alt="Healthy Snacks on the Go"
+                title="Healthy Snacks on the Go"
+                aria-label="Healthy Snacks on the Go"
+              />
+              <p><strong>Healthy Snacks on the Go</strong></p>
+              <h3>Quick and Nutritious Options</h3>
+              <p>
+                Explore a variety of convenient and healthy snack ideas to keep
+                you fueled throughout the day.
+              </p>
+              <div class="blog_person d-flex between align-center">
+                <img
+                  class="person_icon"
+                  src="./assets/img/emily-johnson2.png"
+                  alt="Emily Johnson"
+                  title="Emily Johnson"
+                  aria-label="Emily Johnson"
+                />
+                <article
+                  class="person_content d-flex flex-column justify-start"
+                >
+                  <p><strong>Emily Johnson</strong></p>
+                  <p>23 May 2023 - 5 min read</p>
+                </article>
+                <div class="fav_box">
+                  <img
+                    src="./assets/img/heart-logo.png"
+                    alt="Logo Heart"
+                    title="Logo Heart"
+                    aria-label="Logo Heart"
+                  />
+                  <img
+                    src="./assets/img/bookmark-logo.png"
+                    alt="Logo Bookmark"
+                    title="Logo Bookmark"
+                    aria-label="Logo Bookmark"
+                  />
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <article class="features text-center">
+          <h4>Test your daily Calorie Requirement</h4>
+          <p class="mobile_full">
+            To determine your daily calorie requirement, we need some
+            information about your age, gender, weight, height and activity
+            level. Enter this information to calculate your individual
+            requirements.
+          </p>
+        </article>
+
+        <form class="highlight_box m0-auto">
+          <section id="grid_box" class="grid_box m0-auto">
+            <div class="grid_item">
+              <label for="size">Body size (in cm)</label>
+              <input type="number" name="size" id="size" class="input_zahl" />
+
+              <label for="weight">Weight</label>
+              <input
+                type="number"
+                name="weight"
+                id="weight"
+                class="input_zahl"
+              />
+            </div>
+
+            <div class="grid_item">
+              <label for="age">Age</label>
+              <input type="number" name="age" id="age" class="input_zahl" />
+
+              <div class="form_select">
+                <label for="activity">Activity</label>
+                <select name="activity" id="activity">
+                  <option value="schlafen">Schlafen</option>
+                  <option value="nur_sitzen_oder_liegen">
+                    Nur Sitzen oder Liegen
+                  </option>
+                  <option value="ausschließlich_sitzend">
+                    Ausschließlich sitzende Tätigkeiten
+                  </option>
+                  <option value="vorwiegend_sitzende">
+                    Vorwiegend sitzende Tätigkeiten
+                  </option>
+                  <option value="überwiegend_gehend_oder_stehend">
+                    Überwiegend gehende oder stehende Tätigkeit
+                  </option>
+                  <option value="körperlich_anstrengend">
+                    Körperlich anstrengende berufliche Arbeit
+                  </option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          <article class="gender text-center m0-auto">
+            <script onload="infoCalcText(event)"></script>
+
+            <p>Gender</p>
+            <div class="change_gender d-flex align-center justify-center">
+              <div>
+                <input
+                  class="radio_color"
+                  type="radio"
+                  name="gender"
+                  id="female"
+                  value="female"
+                  checked
+                />
+                <label for="female">Female</label>
+              </div>
+              <div>
+                <input
+                  class="radio_color"
+                  type="radio"
+                  name="gender"
+                  id="Male"
+                  value="male"
+                />
+                <label for="Male">Male</label>
+              </div>
+            </div>
+
+            <div class="error_calculate"></div>
+
+            <button
+              class="btn btn_contact btn_calculate"
+              onclick="calculate(event)"
+              onsubmit=""
+              ;
+              return
+              false
+            >
+              Calculate
+            </button>
+
+            <!-- Gesamte Tabelle der Berechnung -->
+            <div class="gender_calc border_green_dark">
+              <!-- Überschriften der Spalten -->
+              <div class="table_headline_grid d-grid">
+                <p class="kcal">kcal</p>
+                <p class="kJ">kJ</p>
+                <!-- Trennlinie der Kopfzeile der Tabelle -->
+                <div class="math_line d-grid"></div>
+              </div>
+
+              <div class="table_content d-flex">
+                <div class="math_box_index">
+                  <p class="activity">Grundumsatz</p>
+                  <p class="activity">Gesamtumsatz</p>
+                </div>
+                <div class="result d-grid text-left m0-auto"></div>
+              </div>
+            </div>
+          </article>
+        </form>
+
+        <article class="features text-center mt-80">
+          <h4>Our Pricing</h4>
+          <p class="mobile_full">
+            We outline our flexible and affordable options to support you on
+            your journey to optimal health and nutrition. We believe that
+            everyone deserves access to personalized nutrition guidance and
+            resources
+          </p>
+        </article>
+
+        <article class="price_box fit_box m0-auto">
+          <div
+            class="choice_box border_green_dark m0-auto d-flex justify-center align-center text-center"
+          >
+            <button
+              id="btn_month"
+              class="btn_price btn_aktiv"
+              onclick="costTimeMonth(event)"
+            >
+              Monthly
+            </button>
+            <button
+              id="btn_year"
+              class="btn_price"
+              onclick="costTimeYear(event)"
+            >
+              Yearly
+            </button>
+          </div>
+          <p class="m0-auto text-center">Save 50% on Yearly</p>
+
+          <div class="col3 d-flex wrap justify-center align-center">
+            <div class="col_price highlight_box">
+              <h3>Basic Plan</h3>
+              <p>Up to 50% off on Yearly Plan</p>
+              <p class="price_content">
+                Get started on your health journey with our Basic Plan. It
+                includes personalized nutrition coaching, access to our app,
+                meal planning assistance, and email support.
+              </p>
+              <div class="price d-flex align-center"></div>
+              <button class="btn btn_contact">Choose Plan</button>
+            </div>
+
+            <div class="col_price highlight_box">
+              <h3>Premium Plan</h3>
+              <p>Up to 50% off on Yearly Plan</p>
+              <p class="price_content">
+                Upgrade to our Premium Plan for enhanced features. In addition
+                to the Basic Plan, you'll receive video consultations, priority
+                support, and personalized recipe recommendations.
+              </p>
+              <div class="price d-flex align-center">
+                <!-- <h3>
+                  $79
+                  <span>/month</span>
+                </h3> -->
+              </div>
+              <button class="btn btn_contact">Choose Plan</button>
+            </div>
+
+            <div class="col_price highlight_box">
+              <h3>Ultimate Plan</h3>
+              <p>Up to 50% off on Yearly Plan</p>
+              <p class="price_content">
+                Experience the full benefits of personalized nutrition coaching
+                with our Ultimate Plan. Enjoy all the features of the Premium
+                Plan, along with 24/7 chat support and exclusive workshops.
+              </p>
+              <div class="price d-flex align-center">
+                <!-- <h3>
+                  $99
+                  <span>/month</span>
+                </h3> -->
+              </div>
+              <button class="btn btn_contact">Choose Plan</button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <article>
+        <div class="fit_box logo_box_mobile d-flex between align-center">
+          <a href="/index.html" aria-label="Startseite Nitritionist">
+            <img
+              class="logo"
+              src="./assets/img/logo-nutritionist.png"
+              alt="Logo Nutritionist"
+              title="Logo Nutritionist"
+              aria-label="Logo Nutritionist"
+            />
+          </a>
+          <div class="top_jump_box d-flex justify-center align-center">
+            Go to Top
+            <a href="#top">
+              <img
+                class="btn_to_top"
+                src="./assets/img/to-top-button.png"
+                alt="Button to Top"
+                title="Button to Top"
+                aria-label="Button to Top"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div id="nav_box" class="fit_box d-flex between align-center">
+          <a href="/index.html" aria-label="Startseite Nitritionist">
+            <img
+              class="logo"
+              src="./assets/img/logo-nutritionist.png"
+              alt="Logo Nutritionist"
+              title="Logo Nutritionist"
+              aria-label="Logo Nutritionist"
+            />
+          </a>
+          <nav class="d-flex align-center between mb-0">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Team</a>
+            <a href="#">Process</a>
+            <a href="#">Pricing</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact Us</a>
+          </nav>
+          <div class="top_jump_box d-flex justify-center align-center">
+            <p>Go to Top</p>
+            <a href="#top">
+              <img
+                class="btn_to_top"
+                src="./assets/img/to-top-button.png"
+                alt="Button to Top"
+                title="Button to Top"
+                aria-label="Button to Top"
+              />
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="fit_box bar_green d-flex between align-center">
+        <div class="info_box d-flex justify-center align-center">
+          <div class="info_col d-flex between align-center">
+            <img
+              src="./assets/img/logo-post.png"
+              alt="Logo Letter"
+              title="Logo Letter"
+              aria-label="Logo Letter"
+            />
+            <p>hello@squareup.com</p>
+          </div>
+
+          <div class="info_col d-flex between align-center">
+            <img
+              src="./assets/img/logo-phone.png"
+              alt="Logo Phone"
+              title="Logo Phone"
+              aria-label="Logo Phone"
+            />
+            <p>+91 91813 23 2309</p>
+          </div>
+
+          <div class="info_col d-flex between align-center">
+            <img
+              src="./assets/img/logo-location.png"
+              alt="Logo Location"
+              title="Logo Location"
+              aria-label="Logo Location"
+            />
+            <p>Somewhere in the World</p>
+          </div>
+        </div>
+        <p>&copy;&nbsp;2023 Nutritionist. All rights reserved.</p>
+      </article>
+    </footer>
+  </body>
+</html>

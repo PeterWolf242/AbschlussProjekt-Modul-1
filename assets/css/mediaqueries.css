@@ -1,0 +1,242 @@
+@media screen and (max-width: 992px) {
+  .fit_box .logo {
+    width: 130px;
+  }
+
+  .price_box .col3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .price_box .col3 .col_price {
+    padding: 2rem;
+  }
+
+  .costumer_box_desktop {
+    display: none;
+  }
+
+  .coaching .top_nutrition .top_main_content {
+    position: relative;
+  }
+
+  .coaching .top_nutrition .customer_box_mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% - 26px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .btn {
+    padding: 14px 16px;
+  }
+
+  .mobile_menu #btn_contact_mobile {
+    background-color: transparent;
+    color: var(--color_white);
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 0;
+    border-radius: 0;
+    gap: 0;
+  }
+
+  .mobile_menu a {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    color: var(--color_white);
+  }
+
+  .mobile_menu #btn_contact_mobile a:hover,
+  .mobile_menu #btn_contact_mobile a:focus,
+  .mobile_menu a:hover,
+  .mobile_menu a:focus {
+    background-color: var(--color_green_dark);
+    color: var(--color_black);
+    font-weight: bold;
+  }
+
+  .mobile_menu.show_mobile_menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 118px;
+    background-color: var(--color_black_green_light);
+    border: 1px solid var(--color_green_dark);
+    padding: 2rem 0.5rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    z-index: 100;
+  }
+
+  header .top_headline,
+  .coaching .grid_box .grid_item {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  header .nav_section {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 10px 10px 10px;
+  }
+
+  header .top_headline {
+    justify-content: center;
+  }
+
+  .abstract,
+  header .nav_section nav,
+  .coaching .top_nutrition .top_img,
+  footer #nav_box .logo,
+  footer #nav_box a.logo,
+  footer #nav_box .top_jump_box {
+    display: none;
+  }
+
+  .mobile_menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .coaching .top_nutrition {
+    padding-bottom: 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .coaching .top_nutrition .top_img,
+  .top_nutrition .col,
+  .coaching .top_nutrition .col {
+    width: 100%;
+    display: block;
+  }
+
+  .coaching .top_nutrition .top_img {
+    width: 100vw;
+    overflow: hidden;
+    border-radius: 0 0 30px 30px;
+    position: relative;
+    filter: none;
+  }
+
+  .coaching .top_nutrition .col {
+    margin-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+
+  .coaching .top_nutrition .col .btn_box {
+    margin: 30px auto 60px;
+    justify-content: center;
+  }
+
+  .coaching .top_nutrition .top_img,
+  .price_box .col3 {
+    padding: 0;
+  }
+
+  .price_box,
+  .price_box .col3 .col_price,
+  form,
+  form .gender,
+  .coaching .grid_box,
+  .coaching .grid_box .grid_item,
+  .price_box footer #nav_box,
+  footer .logo_box_mobile {
+    width: 100%;
+  }
+
+  .coaching .grid_box .blog_grid {
+    height: auto;
+  }
+
+  .coaching .grid_box .blog_grid .blog_person {
+    position: static;
+    margin: 40px auto;
+  }
+
+  form #grid_box {
+    gap: 0;
+  }
+
+  .coaching,
+  footer {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .coaching .grid_box .grid_item {
+    padding: 10px;
+  }
+
+  .price_box .col3 .col_price {
+    padding: 1.5rem;
+  }
+
+  .price_box .col3,
+  .coaching .grid_box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .top_nutrition,
+  .coaching .grid_box .blog_grid .blog_person,
+  footer .bar_green .info_box,
+  footer nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .coaching .grid_box .blog_grid .blog_person .fav_box {
+    margin: 20px 0 0 auto;
+  }
+
+  .coaching .features p,
+  footer .bar_green,
+  footer .bar_green .info_box {
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  footer .bar_green,
+  footer .bar_green .info_box {
+    text-align: center;
+  }
+
+  footer .bar_green .info_box .info_col {
+    margin: 0 auto;
+    margin: 16px auto;
+    border: 1px solid var(--color_black_green_light);
+    border-radius: 8px;
+    justify-content: center;
+    padding: 12px;
+  }
+
+  form .gender .math_box_index {
+    width: 90%;
+  }
+
+  footer .logo_box_mobile {
+    display: flex;
+  }
+
+  footer .top_jump_box {
+    gap: 8px;
+  }
+
+  .coaching .grid_box .blog_grid .blog_person {
+    left: 10px;
+    right: 10px;
+  }
+}
