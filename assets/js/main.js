@@ -27,8 +27,6 @@ function calculate(event) {
 
     // Fehler abfangen wenn Formular nicht ausgefüllt ist
     for (i = 0; i<inputNumber.length; i++) {
-        console.log(inputNumber[i].value);
-        console.log(i);
         if (!inputNumber[i].value) {
             
         errorCalculate.classList.add("error_text");
@@ -37,7 +35,8 @@ function calculate(event) {
         // Fehlermeldung nach 1 Sekunde wieder ausblenden
         setTimeout(() => {
             errorCalculate.classList.remove("error_text");
-            errorCalculate.innerHTML = ""; // Fehlermeldung entfernen
+            // Fehlermeldung entfernen
+            errorCalculate.innerHTML = ""; 
         }, 1500);
         return;
         }
