@@ -16,13 +16,21 @@ function calculate(event) {
     const errorCalculate = document.querySelector(".error_calculate");
     
     // Globalen Wert aus Input-Feld Type "Number" holen
-    const inputNumber = document.querySelector(".input_zahl");
+    const inputNumber = document.querySelectorAll(".input_zahl");
+
+    console.log({inputNumber});
 
     // Input-Wert in String umwandeln
     inputString = size.toString();
 
+    // console.log(inputNumber[0].value);
+
     // Fehler abfangen wenn Formular nicht ausgefüllt ist
-    if (!inputNumber.value) {
+    for (i = 0; i<inputNumber.length; i++) {
+        console.log(inputNumber[i].value);
+        console.log(i);
+        if (!inputNumber[i].value) {
+            
         errorCalculate.classList.add("error_text");
         errorCalculate.innerHTML = `<p class="error_text">Bitte füllen Sie alle Felder aus</p>`;
 
@@ -31,7 +39,10 @@ function calculate(event) {
             errorCalculate.classList.remove("error_text");
             errorCalculate.innerHTML = ""; // Fehlermeldung entfernen
         }, 1500);
-    } else
+        return;
+        }
+    }
+
     // Abfrage ob "Male" ausgewählt wurde
     if (gender == "male") {
         
@@ -178,7 +189,6 @@ function costTimeYear(event) {
     const priceArrayYear = 
     ["$294/<span>year</span>", "$474/<span>year</span>", "$594/<span>year</span>"];
     
-
     // Ausgabe in HTML der Beiträge nach jährlichen Auswahl
     price[0].innerHTML = `<h3>${priceArrayYear[0]}</h3>`;
     price[1].innerHTML = `<h3>${priceArrayYear[1]}</h3>`;
